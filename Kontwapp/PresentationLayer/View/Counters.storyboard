@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Counters Table View Controller-->
+        <scene sceneID="3zz-CA-PyP">
+            <objects>
+                <tableViewController storyboardIdentifier="CountersTableViewController" id="chu-5y-6jz" customClass="CountersTableViewController" customModule="PresentationLayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="SGQ-hh-Gge">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="counterCell" rowHeight="100" id="pVA-A2-x6j" customClass="CounterTableViewCell" customModule="PresentationLayer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="768" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pVA-A2-x6j" id="15S-NQ-7CQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSD-u5-mVE">
+                                            <rect key="frame" x="28" y="40" width="32" height="20"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="U7K-XH-zpO">
+                                            <rect key="frame" x="655" y="35.5" width="94" height="29"/>
+                                            <color key="tintColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="counterValueChanged:" destination="pVA-A2-x6j" eventType="valueChanged" id="UOS-JD-zE9"/>
+                                            </connections>
+                                        </stepper>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AkP-bo-V8b">
+                                            <rect key="frame" x="637.5" y="40" width="9.5" height="20"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="U7K-XH-zpO" firstAttribute="centerY" secondItem="15S-NQ-7CQ" secondAttribute="centerY" id="6U7-zm-xaL"/>
+                                        <constraint firstItem="AkP-bo-V8b" firstAttribute="centerY" secondItem="15S-NQ-7CQ" secondAttribute="centerY" id="9oO-aM-bTb"/>
+                                        <constraint firstItem="U7K-XH-zpO" firstAttribute="trailing" secondItem="15S-NQ-7CQ" secondAttribute="trailingMargin" constant="0.80000000000000004" id="IJ0-A2-WhB"/>
+                                        <constraint firstItem="SSD-u5-mVE" firstAttribute="centerY" secondItem="15S-NQ-7CQ" secondAttribute="centerY" id="P3O-em-VjH"/>
+                                        <constraint firstItem="U7K-XH-zpO" firstAttribute="leading" secondItem="AkP-bo-V8b" secondAttribute="trailing" constant="8" id="mOo-CC-azN"/>
+                                        <constraint firstItem="SSD-u5-mVE" firstAttribute="leading" secondItem="15S-NQ-7CQ" secondAttribute="leadingMargin" constant="8" id="v3T-OK-0Ac"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="counterTitle" destination="SSD-u5-mVE" id="lFf-Br-3uI"/>
+                                    <outlet property="counterValueLabel" destination="AkP-bo-V8b" id="ilh-3E-UPm"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="chu-5y-6jz" id="fpP-na-ZcE"/>
+                            <outlet property="delegate" destination="chu-5y-6jz" id="OP3-me-TVC"/>
+                        </connections>
+                    </tableView>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fgR-4i-Y3r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.5999999999999996" y="-90.404797601199405"/>
+        </scene>
+    </scenes>
+</document>

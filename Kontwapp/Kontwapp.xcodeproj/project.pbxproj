@@ -1,0 +1,1389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E7FC5E723D0A4B400F5E1A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7FC5E623D0A4B400F5E1A5 /* AppDelegate.swift */; };
+		3E7FC5EE23D0A4BA00F5E1A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7FC5ED23D0A4BA00F5E1A5 /* Assets.xcassets */; };
+		3E7FC5F123D0A4BA00F5E1A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7FC5EF23D0A4BA00F5E1A5 /* LaunchScreen.storyboard */; };
+		3E7FC5FC23D0A4BB00F5E1A5 /* KontwappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7FC5FB23D0A4BB00F5E1A5 /* KontwappTests.swift */; };
+		3E7FC61423D0A54200F5E1A5 /* DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7FC60B23D0A54200F5E1A5 /* DataLayer.framework */; };
+		3E7FC61B23D0A54200F5E1A5 /* DataLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7FC61A23D0A54200F5E1A5 /* DataLayerTests.swift */; };
+		3E7FC61D23D0A54200F5E1A5 /* DataLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E7FC60D23D0A54200F5E1A5 /* DataLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E7FC62023D0A54200F5E1A5 /* DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7FC60B23D0A54200F5E1A5 /* DataLayer.framework */; };
+		3E7FC62123D0A54200F5E1A5 /* DataLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7FC60B23D0A54200F5E1A5 /* DataLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3E7FC63723D0A55B00F5E1A5 /* DomainLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7FC62E23D0A55B00F5E1A5 /* DomainLayer.framework */; };
+		3E7FC63E23D0A55B00F5E1A5 /* DomainLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7FC63D23D0A55B00F5E1A5 /* DomainLayerTests.swift */; };
+		3E7FC64023D0A55B00F5E1A5 /* DomainLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E7FC63023D0A55B00F5E1A5 /* DomainLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E7FC64323D0A55B00F5E1A5 /* DomainLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7FC62E23D0A55B00F5E1A5 /* DomainLayer.framework */; };
+		3E7FC64423D0A55B00F5E1A5 /* DomainLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7FC62E23D0A55B00F5E1A5 /* DomainLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3E7FC65923D0A74A00F5E1A5 /* PresentationLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7FC65023D0A74900F5E1A5 /* PresentationLayer.framework */; };
+		3E7FC66023D0A74A00F5E1A5 /* PresentationLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7FC65F23D0A74A00F5E1A5 /* PresentationLayerTests.swift */; };
+		3E7FC66223D0A74A00F5E1A5 /* PresentationLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E7FC65223D0A74A00F5E1A5 /* PresentationLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E7FC66523D0A74A00F5E1A5 /* PresentationLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7FC65023D0A74900F5E1A5 /* PresentationLayer.framework */; };
+		3E7FC66623D0A74A00F5E1A5 /* PresentationLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7FC65023D0A74900F5E1A5 /* PresentationLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3E7FC66F23D0B6BC00F5E1A5 /* Counters.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7FC66E23D0B6BC00F5E1A5 /* Counters.storyboard */; };
+		3E7FC67123D0B6EB00F5E1A5 /* CountersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7FC67023D0B6EB00F5E1A5 /* CountersTableViewController.swift */; };
+		3E7FC67F23D0FAFA00F5E1A5 /* CounterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7FC67E23D0FAFA00F5E1A5 /* CounterTableViewCell.swift */; };
+		3E7FC68223D0FE5300F5E1A5 /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7FC68123D0FE5300F5E1A5 /* AppStoryboard.swift */; };
+		3E7FC68423D0FE8F00F5E1A5 /* UIViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7FC68323D0FE8F00F5E1A5 /* UIViewController+Storyboard.swift */; };
+		3E7FC68523D1004300F5E1A5 /* CounterDiContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7FC67523D0BBFA00F5E1A5 /* CounterDiContainer.swift */; };
+		3E7FC68723D1027100F5E1A5 /* AppDiContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7FC67323D0BBEA00F5E1A5 /* AppDiContainer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E7FC5F823D0A4BB00F5E1A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E7FC5DB23D0A4B400F5E1A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E7FC5E223D0A4B400F5E1A5;
+			remoteInfo = Kontwapp;
+		};
+		3E7FC61523D0A54200F5E1A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E7FC5DB23D0A4B400F5E1A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E7FC60A23D0A54200F5E1A5;
+			remoteInfo = DataLayer;
+		};
+		3E7FC61723D0A54200F5E1A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E7FC5DB23D0A4B400F5E1A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E7FC5E223D0A4B400F5E1A5;
+			remoteInfo = Kontwapp;
+		};
+		3E7FC61E23D0A54200F5E1A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E7FC5DB23D0A4B400F5E1A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E7FC60A23D0A54200F5E1A5;
+			remoteInfo = DataLayer;
+		};
+		3E7FC63823D0A55B00F5E1A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E7FC5DB23D0A4B400F5E1A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E7FC62D23D0A55B00F5E1A5;
+			remoteInfo = DomainLayer;
+		};
+		3E7FC63A23D0A55B00F5E1A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E7FC5DB23D0A4B400F5E1A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E7FC5E223D0A4B400F5E1A5;
+			remoteInfo = Kontwapp;
+		};
+		3E7FC64123D0A55B00F5E1A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E7FC5DB23D0A4B400F5E1A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E7FC62D23D0A55B00F5E1A5;
+			remoteInfo = DomainLayer;
+		};
+		3E7FC65A23D0A74A00F5E1A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E7FC5DB23D0A4B400F5E1A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E7FC64F23D0A74900F5E1A5;
+			remoteInfo = PresentationLayer;
+		};
+		3E7FC65C23D0A74A00F5E1A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E7FC5DB23D0A4B400F5E1A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E7FC5E223D0A4B400F5E1A5;
+			remoteInfo = Kontwapp;
+		};
+		3E7FC66323D0A74A00F5E1A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E7FC5DB23D0A4B400F5E1A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E7FC64F23D0A74900F5E1A5;
+			remoteInfo = PresentationLayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3E7FC62523D0A54200F5E1A5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3E7FC64423D0A55B00F5E1A5 /* DomainLayer.framework in Embed Frameworks */,
+				3E7FC62123D0A54200F5E1A5 /* DataLayer.framework in Embed Frameworks */,
+				3E7FC66623D0A74A00F5E1A5 /* PresentationLayer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3E7FC5E323D0A4B400F5E1A5 /* Kontwapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kontwapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E7FC5E623D0A4B400F5E1A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3E7FC5ED23D0A4BA00F5E1A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E7FC5F023D0A4BA00F5E1A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E7FC5F223D0A4BA00F5E1A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E7FC5F723D0A4BB00F5E1A5 /* KontwappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KontwappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E7FC5FB23D0A4BB00F5E1A5 /* KontwappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontwappTests.swift; sourceTree = "<group>"; };
+		3E7FC5FD23D0A4BB00F5E1A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E7FC60B23D0A54200F5E1A5 /* DataLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E7FC60D23D0A54200F5E1A5 /* DataLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataLayer.h; sourceTree = "<group>"; };
+		3E7FC60E23D0A54200F5E1A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E7FC61323D0A54200F5E1A5 /* DataLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E7FC61A23D0A54200F5E1A5 /* DataLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLayerTests.swift; sourceTree = "<group>"; };
+		3E7FC61C23D0A54200F5E1A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E7FC62E23D0A55B00F5E1A5 /* DomainLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DomainLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E7FC63023D0A55B00F5E1A5 /* DomainLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DomainLayer.h; sourceTree = "<group>"; };
+		3E7FC63123D0A55B00F5E1A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E7FC63623D0A55B00F5E1A5 /* DomainLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E7FC63D23D0A55B00F5E1A5 /* DomainLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainLayerTests.swift; sourceTree = "<group>"; };
+		3E7FC63F23D0A55B00F5E1A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E7FC65023D0A74900F5E1A5 /* PresentationLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PresentationLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E7FC65223D0A74A00F5E1A5 /* PresentationLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentationLayer.h; sourceTree = "<group>"; };
+		3E7FC65323D0A74A00F5E1A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E7FC65823D0A74A00F5E1A5 /* PresentationLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E7FC65F23D0A74A00F5E1A5 /* PresentationLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationLayerTests.swift; sourceTree = "<group>"; };
+		3E7FC66123D0A74A00F5E1A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E7FC66E23D0B6BC00F5E1A5 /* Counters.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Counters.storyboard; sourceTree = "<group>"; };
+		3E7FC67023D0B6EB00F5E1A5 /* CountersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountersTableViewController.swift; sourceTree = "<group>"; };
+		3E7FC67323D0BBEA00F5E1A5 /* AppDiContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDiContainer.swift; sourceTree = "<group>"; };
+		3E7FC67523D0BBFA00F5E1A5 /* CounterDiContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterDiContainer.swift; sourceTree = "<group>"; };
+		3E7FC67E23D0FAFA00F5E1A5 /* CounterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterTableViewCell.swift; sourceTree = "<group>"; };
+		3E7FC68123D0FE5300F5E1A5 /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
+		3E7FC68323D0FE8F00F5E1A5 /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E7FC5E023D0A4B400F5E1A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7FC64323D0A55B00F5E1A5 /* DomainLayer.framework in Frameworks */,
+				3E7FC62023D0A54200F5E1A5 /* DataLayer.framework in Frameworks */,
+				3E7FC66523D0A74A00F5E1A5 /* PresentationLayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7FC5F423D0A4BB00F5E1A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7FC60823D0A54200F5E1A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7FC61023D0A54200F5E1A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7FC61423D0A54200F5E1A5 /* DataLayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7FC62B23D0A55B00F5E1A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7FC63323D0A55B00F5E1A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7FC63723D0A55B00F5E1A5 /* DomainLayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7FC64D23D0A74900F5E1A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7FC65523D0A74A00F5E1A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7FC65923D0A74A00F5E1A5 /* PresentationLayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E7FC5DA23D0A4B400F5E1A5 = {
+			isa = PBXGroup;
+			children = (
+				3E7FC5E523D0A4B400F5E1A5 /* Application */,
+				3E7FC5FA23D0A4BB00F5E1A5 /* KontwappTests */,
+				3E7FC60C23D0A54200F5E1A5 /* DataLayer */,
+				3E7FC61923D0A54200F5E1A5 /* DataLayerTests */,
+				3E7FC62F23D0A55B00F5E1A5 /* DomainLayer */,
+				3E7FC63C23D0A55B00F5E1A5 /* DomainLayerTests */,
+				3E7FC65123D0A74A00F5E1A5 /* PresentationLayer */,
+				3E7FC65E23D0A74A00F5E1A5 /* PresentationLayerTests */,
+				3E7FC5E423D0A4B400F5E1A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E7FC5E423D0A4B400F5E1A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E7FC5E323D0A4B400F5E1A5 /* Kontwapp.app */,
+				3E7FC5F723D0A4BB00F5E1A5 /* KontwappTests.xctest */,
+				3E7FC60B23D0A54200F5E1A5 /* DataLayer.framework */,
+				3E7FC61323D0A54200F5E1A5 /* DataLayerTests.xctest */,
+				3E7FC62E23D0A55B00F5E1A5 /* DomainLayer.framework */,
+				3E7FC63623D0A55B00F5E1A5 /* DomainLayerTests.xctest */,
+				3E7FC65023D0A74900F5E1A5 /* PresentationLayer.framework */,
+				3E7FC65823D0A74A00F5E1A5 /* PresentationLayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E7FC5E523D0A4B400F5E1A5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3E7FC68023D0FE4600F5E1A5 /* Utils */,
+				3E7FC67223D0BADD00F5E1A5 /* DiContainer */,
+				3E7FC5E623D0A4B400F5E1A5 /* AppDelegate.swift */,
+				3E7FC5ED23D0A4BA00F5E1A5 /* Assets.xcassets */,
+				3E7FC5EF23D0A4BA00F5E1A5 /* LaunchScreen.storyboard */,
+				3E7FC5F223D0A4BA00F5E1A5 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3E7FC5FA23D0A4BB00F5E1A5 /* KontwappTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E7FC5FB23D0A4BB00F5E1A5 /* KontwappTests.swift */,
+				3E7FC5FD23D0A4BB00F5E1A5 /* Info.plist */,
+			);
+			path = KontwappTests;
+			sourceTree = "<group>";
+		};
+		3E7FC60C23D0A54200F5E1A5 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				3E7FC60D23D0A54200F5E1A5 /* DataLayer.h */,
+				3E7FC60E23D0A54200F5E1A5 /* Info.plist */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		3E7FC61923D0A54200F5E1A5 /* DataLayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E7FC61A23D0A54200F5E1A5 /* DataLayerTests.swift */,
+				3E7FC61C23D0A54200F5E1A5 /* Info.plist */,
+			);
+			path = DataLayerTests;
+			sourceTree = "<group>";
+		};
+		3E7FC62F23D0A55B00F5E1A5 /* DomainLayer */ = {
+			isa = PBXGroup;
+			children = (
+				3E7FC63023D0A55B00F5E1A5 /* DomainLayer.h */,
+				3E7FC63123D0A55B00F5E1A5 /* Info.plist */,
+			);
+			path = DomainLayer;
+			sourceTree = "<group>";
+		};
+		3E7FC63C23D0A55B00F5E1A5 /* DomainLayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E7FC63D23D0A55B00F5E1A5 /* DomainLayerTests.swift */,
+				3E7FC63F23D0A55B00F5E1A5 /* Info.plist */,
+			);
+			path = DomainLayerTests;
+			sourceTree = "<group>";
+		};
+		3E7FC65123D0A74A00F5E1A5 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				3E7FC66D23D0B6A600F5E1A5 /* View */,
+				3E7FC65223D0A74A00F5E1A5 /* PresentationLayer.h */,
+				3E7FC65323D0A74A00F5E1A5 /* Info.plist */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		3E7FC65E23D0A74A00F5E1A5 /* PresentationLayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E7FC65F23D0A74A00F5E1A5 /* PresentationLayerTests.swift */,
+				3E7FC66123D0A74A00F5E1A5 /* Info.plist */,
+			);
+			path = PresentationLayerTests;
+			sourceTree = "<group>";
+		};
+		3E7FC66D23D0B6A600F5E1A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E7FC67D23D0FADC00F5E1A5 /* Cells */,
+				3E7FC66E23D0B6BC00F5E1A5 /* Counters.storyboard */,
+				3E7FC67023D0B6EB00F5E1A5 /* CountersTableViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E7FC67223D0BADD00F5E1A5 /* DiContainer */ = {
+			isa = PBXGroup;
+			children = (
+				3E7FC67323D0BBEA00F5E1A5 /* AppDiContainer.swift */,
+				3E7FC67523D0BBFA00F5E1A5 /* CounterDiContainer.swift */,
+			);
+			path = DiContainer;
+			sourceTree = "<group>";
+		};
+		3E7FC67D23D0FADC00F5E1A5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3E7FC67E23D0FAFA00F5E1A5 /* CounterTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3E7FC68023D0FE4600F5E1A5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3E7FC68123D0FE5300F5E1A5 /* AppStoryboard.swift */,
+				3E7FC68323D0FE8F00F5E1A5 /* UIViewController+Storyboard.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3E7FC60623D0A54200F5E1A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7FC61D23D0A54200F5E1A5 /* DataLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7FC62923D0A55B00F5E1A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7FC64023D0A55B00F5E1A5 /* DomainLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7FC64B23D0A74900F5E1A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7FC66223D0A74A00F5E1A5 /* PresentationLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3E7FC5E223D0A4B400F5E1A5 /* Kontwapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E7FC60023D0A4BB00F5E1A5 /* Build configuration list for PBXNativeTarget "Kontwapp" */;
+			buildPhases = (
+				3E7FC5DF23D0A4B400F5E1A5 /* Sources */,
+				3E7FC5E023D0A4B400F5E1A5 /* Frameworks */,
+				3E7FC5E123D0A4B400F5E1A5 /* Resources */,
+				3E7FC62523D0A54200F5E1A5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E7FC61F23D0A54200F5E1A5 /* PBXTargetDependency */,
+				3E7FC64223D0A55B00F5E1A5 /* PBXTargetDependency */,
+				3E7FC66423D0A74A00F5E1A5 /* PBXTargetDependency */,
+			);
+			name = Kontwapp;
+			productName = Kontwapp;
+			productReference = 3E7FC5E323D0A4B400F5E1A5 /* Kontwapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3E7FC5F623D0A4BB00F5E1A5 /* KontwappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E7FC60323D0A4BB00F5E1A5 /* Build configuration list for PBXNativeTarget "KontwappTests" */;
+			buildPhases = (
+				3E7FC5F323D0A4BB00F5E1A5 /* Sources */,
+				3E7FC5F423D0A4BB00F5E1A5 /* Frameworks */,
+				3E7FC5F523D0A4BB00F5E1A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E7FC5F923D0A4BB00F5E1A5 /* PBXTargetDependency */,
+			);
+			name = KontwappTests;
+			productName = KontwappTests;
+			productReference = 3E7FC5F723D0A4BB00F5E1A5 /* KontwappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3E7FC60A23D0A54200F5E1A5 /* DataLayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E7FC62223D0A54200F5E1A5 /* Build configuration list for PBXNativeTarget "DataLayer" */;
+			buildPhases = (
+				3E7FC60623D0A54200F5E1A5 /* Headers */,
+				3E7FC60723D0A54200F5E1A5 /* Sources */,
+				3E7FC60823D0A54200F5E1A5 /* Frameworks */,
+				3E7FC60923D0A54200F5E1A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DataLayer;
+			productName = DataLayer;
+			productReference = 3E7FC60B23D0A54200F5E1A5 /* DataLayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3E7FC61223D0A54200F5E1A5 /* DataLayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E7FC62623D0A54200F5E1A5 /* Build configuration list for PBXNativeTarget "DataLayerTests" */;
+			buildPhases = (
+				3E7FC60F23D0A54200F5E1A5 /* Sources */,
+				3E7FC61023D0A54200F5E1A5 /* Frameworks */,
+				3E7FC61123D0A54200F5E1A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E7FC61623D0A54200F5E1A5 /* PBXTargetDependency */,
+				3E7FC61823D0A54200F5E1A5 /* PBXTargetDependency */,
+			);
+			name = DataLayerTests;
+			productName = DataLayerTests;
+			productReference = 3E7FC61323D0A54200F5E1A5 /* DataLayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3E7FC62D23D0A55B00F5E1A5 /* DomainLayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E7FC64523D0A55B00F5E1A5 /* Build configuration list for PBXNativeTarget "DomainLayer" */;
+			buildPhases = (
+				3E7FC62923D0A55B00F5E1A5 /* Headers */,
+				3E7FC62A23D0A55B00F5E1A5 /* Sources */,
+				3E7FC62B23D0A55B00F5E1A5 /* Frameworks */,
+				3E7FC62C23D0A55B00F5E1A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DomainLayer;
+			productName = DomainLayer;
+			productReference = 3E7FC62E23D0A55B00F5E1A5 /* DomainLayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3E7FC63523D0A55B00F5E1A5 /* DomainLayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E7FC64823D0A55B00F5E1A5 /* Build configuration list for PBXNativeTarget "DomainLayerTests" */;
+			buildPhases = (
+				3E7FC63223D0A55B00F5E1A5 /* Sources */,
+				3E7FC63323D0A55B00F5E1A5 /* Frameworks */,
+				3E7FC63423D0A55B00F5E1A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E7FC63923D0A55B00F5E1A5 /* PBXTargetDependency */,
+				3E7FC63B23D0A55B00F5E1A5 /* PBXTargetDependency */,
+			);
+			name = DomainLayerTests;
+			productName = DomainLayerTests;
+			productReference = 3E7FC63623D0A55B00F5E1A5 /* DomainLayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3E7FC64F23D0A74900F5E1A5 /* PresentationLayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E7FC66723D0A74A00F5E1A5 /* Build configuration list for PBXNativeTarget "PresentationLayer" */;
+			buildPhases = (
+				3E7FC64B23D0A74900F5E1A5 /* Headers */,
+				3E7FC64C23D0A74900F5E1A5 /* Sources */,
+				3E7FC64D23D0A74900F5E1A5 /* Frameworks */,
+				3E7FC64E23D0A74900F5E1A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PresentationLayer;
+			productName = PresentationLayer;
+			productReference = 3E7FC65023D0A74900F5E1A5 /* PresentationLayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3E7FC65723D0A74A00F5E1A5 /* PresentationLayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E7FC66A23D0A74A00F5E1A5 /* Build configuration list for PBXNativeTarget "PresentationLayerTests" */;
+			buildPhases = (
+				3E7FC65423D0A74A00F5E1A5 /* Sources */,
+				3E7FC65523D0A74A00F5E1A5 /* Frameworks */,
+				3E7FC65623D0A74A00F5E1A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E7FC65B23D0A74A00F5E1A5 /* PBXTargetDependency */,
+				3E7FC65D23D0A74A00F5E1A5 /* PBXTargetDependency */,
+			);
+			name = PresentationLayerTests;
+			productName = PresentationLayerTests;
+			productReference = 3E7FC65823D0A74A00F5E1A5 /* PresentationLayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E7FC5DB23D0A4B400F5E1A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Jose Vildosola";
+				TargetAttributes = {
+					3E7FC5E223D0A4B400F5E1A5 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					3E7FC5F623D0A4BB00F5E1A5 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3E7FC5E223D0A4B400F5E1A5;
+					};
+					3E7FC60A23D0A54200F5E1A5 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					3E7FC61223D0A54200F5E1A5 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3E7FC5E223D0A4B400F5E1A5;
+					};
+					3E7FC62D23D0A55B00F5E1A5 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					3E7FC63523D0A55B00F5E1A5 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3E7FC5E223D0A4B400F5E1A5;
+					};
+					3E7FC64F23D0A74900F5E1A5 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					3E7FC65723D0A74A00F5E1A5 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3E7FC5E223D0A4B400F5E1A5;
+					};
+				};
+			};
+			buildConfigurationList = 3E7FC5DE23D0A4B400F5E1A5 /* Build configuration list for PBXProject "Kontwapp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E7FC5DA23D0A4B400F5E1A5;
+			productRefGroup = 3E7FC5E423D0A4B400F5E1A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E7FC5E223D0A4B400F5E1A5 /* Kontwapp */,
+				3E7FC5F623D0A4BB00F5E1A5 /* KontwappTests */,
+				3E7FC60A23D0A54200F5E1A5 /* DataLayer */,
+				3E7FC61223D0A54200F5E1A5 /* DataLayerTests */,
+				3E7FC62D23D0A55B00F5E1A5 /* DomainLayer */,
+				3E7FC63523D0A55B00F5E1A5 /* DomainLayerTests */,
+				3E7FC64F23D0A74900F5E1A5 /* PresentationLayer */,
+				3E7FC65723D0A74A00F5E1A5 /* PresentationLayerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E7FC5E123D0A4B400F5E1A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7FC5F123D0A4BA00F5E1A5 /* LaunchScreen.storyboard in Resources */,
+				3E7FC5EE23D0A4BA00F5E1A5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7FC5F523D0A4BB00F5E1A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7FC60923D0A54200F5E1A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7FC61123D0A54200F5E1A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7FC62C23D0A55B00F5E1A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7FC63423D0A55B00F5E1A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7FC64E23D0A74900F5E1A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7FC66F23D0B6BC00F5E1A5 /* Counters.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7FC65623D0A74A00F5E1A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E7FC5DF23D0A4B400F5E1A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7FC68223D0FE5300F5E1A5 /* AppStoryboard.swift in Sources */,
+				3E7FC5E723D0A4B400F5E1A5 /* AppDelegate.swift in Sources */,
+				3E7FC68423D0FE8F00F5E1A5 /* UIViewController+Storyboard.swift in Sources */,
+				3E7FC68523D1004300F5E1A5 /* CounterDiContainer.swift in Sources */,
+				3E7FC68723D1027100F5E1A5 /* AppDiContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7FC5F323D0A4BB00F5E1A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7FC5FC23D0A4BB00F5E1A5 /* KontwappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7FC60723D0A54200F5E1A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7FC60F23D0A54200F5E1A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7FC61B23D0A54200F5E1A5 /* DataLayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7FC62A23D0A55B00F5E1A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7FC63223D0A55B00F5E1A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7FC63E23D0A55B00F5E1A5 /* DomainLayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7FC64C23D0A74900F5E1A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7FC67F23D0FAFA00F5E1A5 /* CounterTableViewCell.swift in Sources */,
+				3E7FC67123D0B6EB00F5E1A5 /* CountersTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E7FC65423D0A74A00F5E1A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7FC66023D0A74A00F5E1A5 /* PresentationLayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E7FC5F923D0A4BB00F5E1A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E7FC5E223D0A4B400F5E1A5 /* Kontwapp */;
+			targetProxy = 3E7FC5F823D0A4BB00F5E1A5 /* PBXContainerItemProxy */;
+		};
+		3E7FC61623D0A54200F5E1A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E7FC60A23D0A54200F5E1A5 /* DataLayer */;
+			targetProxy = 3E7FC61523D0A54200F5E1A5 /* PBXContainerItemProxy */;
+		};
+		3E7FC61823D0A54200F5E1A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E7FC5E223D0A4B400F5E1A5 /* Kontwapp */;
+			targetProxy = 3E7FC61723D0A54200F5E1A5 /* PBXContainerItemProxy */;
+		};
+		3E7FC61F23D0A54200F5E1A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E7FC60A23D0A54200F5E1A5 /* DataLayer */;
+			targetProxy = 3E7FC61E23D0A54200F5E1A5 /* PBXContainerItemProxy */;
+		};
+		3E7FC63923D0A55B00F5E1A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E7FC62D23D0A55B00F5E1A5 /* DomainLayer */;
+			targetProxy = 3E7FC63823D0A55B00F5E1A5 /* PBXContainerItemProxy */;
+		};
+		3E7FC63B23D0A55B00F5E1A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E7FC5E223D0A4B400F5E1A5 /* Kontwapp */;
+			targetProxy = 3E7FC63A23D0A55B00F5E1A5 /* PBXContainerItemProxy */;
+		};
+		3E7FC64223D0A55B00F5E1A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E7FC62D23D0A55B00F5E1A5 /* DomainLayer */;
+			targetProxy = 3E7FC64123D0A55B00F5E1A5 /* PBXContainerItemProxy */;
+		};
+		3E7FC65B23D0A74A00F5E1A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E7FC64F23D0A74900F5E1A5 /* PresentationLayer */;
+			targetProxy = 3E7FC65A23D0A74A00F5E1A5 /* PBXContainerItemProxy */;
+		};
+		3E7FC65D23D0A74A00F5E1A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E7FC5E223D0A4B400F5E1A5 /* Kontwapp */;
+			targetProxy = 3E7FC65C23D0A74A00F5E1A5 /* PBXContainerItemProxy */;
+		};
+		3E7FC66423D0A74A00F5E1A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E7FC64F23D0A74900F5E1A5 /* PresentationLayer */;
+			targetProxy = 3E7FC66323D0A74A00F5E1A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3E7FC5EF23D0A4BA00F5E1A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E7FC5F023D0A4BA00F5E1A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E7FC5FE23D0A4BB00F5E1A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3E7FC5FF23D0A4BB00F5E1A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E7FC60123D0A4BB00F5E1A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAQTM3NV6N;
+				INFOPLIST_FILE = "$(SRCROOT)/Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jv.Kontwapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E7FC60223D0A4BB00F5E1A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAQTM3NV6N;
+				INFOPLIST_FILE = "$(SRCROOT)/Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jv.Kontwapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3E7FC60423D0A4BB00F5E1A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAQTM3NV6N;
+				INFOPLIST_FILE = KontwappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jv.KontwappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kontwapp.app/Kontwapp";
+			};
+			name = Debug;
+		};
+		3E7FC60523D0A4BB00F5E1A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAQTM3NV6N;
+				INFOPLIST_FILE = KontwappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jv.KontwappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kontwapp.app/Kontwapp";
+			};
+			name = Release;
+		};
+		3E7FC62323D0A54200F5E1A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PAQTM3NV6N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DataLayer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jv.DataLayer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3E7FC62423D0A54200F5E1A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PAQTM3NV6N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DataLayer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jv.DataLayer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3E7FC62723D0A54200F5E1A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAQTM3NV6N;
+				INFOPLIST_FILE = DataLayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jv.DataLayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kontwapp.app/Kontwapp";
+			};
+			name = Debug;
+		};
+		3E7FC62823D0A54200F5E1A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAQTM3NV6N;
+				INFOPLIST_FILE = DataLayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jv.DataLayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kontwapp.app/Kontwapp";
+			};
+			name = Release;
+		};
+		3E7FC64623D0A55B00F5E1A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PAQTM3NV6N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DomainLayer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jv.DomainLayer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3E7FC64723D0A55B00F5E1A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PAQTM3NV6N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DomainLayer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jv.DomainLayer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3E7FC64923D0A55B00F5E1A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAQTM3NV6N;
+				INFOPLIST_FILE = DomainLayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jv.DomainLayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kontwapp.app/Kontwapp";
+			};
+			name = Debug;
+		};
+		3E7FC64A23D0A55B00F5E1A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAQTM3NV6N;
+				INFOPLIST_FILE = DomainLayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jv.DomainLayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kontwapp.app/Kontwapp";
+			};
+			name = Release;
+		};
+		3E7FC66823D0A74A00F5E1A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PAQTM3NV6N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PresentationLayer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jv.PresentationLayer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3E7FC66923D0A74A00F5E1A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PAQTM3NV6N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PresentationLayer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jv.PresentationLayer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3E7FC66B23D0A74A00F5E1A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAQTM3NV6N;
+				INFOPLIST_FILE = PresentationLayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jv.PresentationLayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kontwapp.app/Kontwapp";
+			};
+			name = Debug;
+		};
+		3E7FC66C23D0A74A00F5E1A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAQTM3NV6N;
+				INFOPLIST_FILE = PresentationLayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jv.PresentationLayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kontwapp.app/Kontwapp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E7FC5DE23D0A4B400F5E1A5 /* Build configuration list for PBXProject "Kontwapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E7FC5FE23D0A4BB00F5E1A5 /* Debug */,
+				3E7FC5FF23D0A4BB00F5E1A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E7FC60023D0A4BB00F5E1A5 /* Build configuration list for PBXNativeTarget "Kontwapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E7FC60123D0A4BB00F5E1A5 /* Debug */,
+				3E7FC60223D0A4BB00F5E1A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E7FC60323D0A4BB00F5E1A5 /* Build configuration list for PBXNativeTarget "KontwappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E7FC60423D0A4BB00F5E1A5 /* Debug */,
+				3E7FC60523D0A4BB00F5E1A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E7FC62223D0A54200F5E1A5 /* Build configuration list for PBXNativeTarget "DataLayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E7FC62323D0A54200F5E1A5 /* Debug */,
+				3E7FC62423D0A54200F5E1A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E7FC62623D0A54200F5E1A5 /* Build configuration list for PBXNativeTarget "DataLayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E7FC62723D0A54200F5E1A5 /* Debug */,
+				3E7FC62823D0A54200F5E1A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E7FC64523D0A55B00F5E1A5 /* Build configuration list for PBXNativeTarget "DomainLayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E7FC64623D0A55B00F5E1A5 /* Debug */,
+				3E7FC64723D0A55B00F5E1A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E7FC64823D0A55B00F5E1A5 /* Build configuration list for PBXNativeTarget "DomainLayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E7FC64923D0A55B00F5E1A5 /* Debug */,
+				3E7FC64A23D0A55B00F5E1A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E7FC66723D0A74A00F5E1A5 /* Build configuration list for PBXNativeTarget "PresentationLayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E7FC66823D0A74A00F5E1A5 /* Debug */,
+				3E7FC66923D0A74A00F5E1A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E7FC66A23D0A74A00F5E1A5 /* Build configuration list for PBXNativeTarget "PresentationLayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E7FC66B23D0A74A00F5E1A5 /* Debug */,
+				3E7FC66C23D0A74A00F5E1A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E7FC5DB23D0A4B400F5E1A5 /* Project object */;
+}
