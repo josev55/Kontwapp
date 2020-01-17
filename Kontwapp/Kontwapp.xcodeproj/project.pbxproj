@@ -33,6 +33,8 @@
 		3E7FC68423D0FE8F00F5E1A5 /* UIViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7FC68323D0FE8F00F5E1A5 /* UIViewController+Storyboard.swift */; };
 		3E7FC68523D1004300F5E1A5 /* CounterDiContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7FC67523D0BBFA00F5E1A5 /* CounterDiContainer.swift */; };
 		3E7FC68723D1027100F5E1A5 /* AppDiContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7FC67323D0BBEA00F5E1A5 /* AppDiContainer.swift */; };
+		3E7FC68B23D1FC4E00F5E1A5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7FC68823D1FB5500F5E1A5 /* Color.swift */; };
+		3E7FC68F23D2032100F5E1A5 /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7FC68E23D2032100F5E1A5 /* CounterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,6 +160,8 @@
 		3E7FC67E23D0FAFA00F5E1A5 /* CounterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterTableViewCell.swift; sourceTree = "<group>"; };
 		3E7FC68123D0FE5300F5E1A5 /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
 		3E7FC68323D0FE8F00F5E1A5 /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
+		3E7FC68823D1FB5500F5E1A5 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		3E7FC68E23D2032100F5E1A5 /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,7 +321,8 @@
 		3E7FC65123D0A74A00F5E1A5 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				3E7FC66D23D0B6A600F5E1A5 /* View */,
+				3E7FC68A23D1FC3F00F5E1A5 /* Presentation Utils */,
+				3E7FC68C23D202D400F5E1A5 /* Counters List */,
 				3E7FC65223D0A74A00F5E1A5 /* PresentationLayer.h */,
 				3E7FC65323D0A74A00F5E1A5 /* Info.plist */,
 			);
@@ -367,6 +372,31 @@
 				3E7FC68323D0FE8F00F5E1A5 /* UIViewController+Storyboard.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		3E7FC68A23D1FC3F00F5E1A5 /* Presentation Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3E7FC68823D1FB5500F5E1A5 /* Color.swift */,
+			);
+			path = "Presentation Utils";
+			sourceTree = "<group>";
+		};
+		3E7FC68C23D202D400F5E1A5 /* Counters List */ = {
+			isa = PBXGroup;
+			children = (
+				3E7FC68D23D202E700F5E1A5 /* Models */,
+				3E7FC66D23D0B6A600F5E1A5 /* View */,
+			);
+			path = "Counters List";
+			sourceTree = "<group>";
+		};
+		3E7FC68D23D202E700F5E1A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3E7FC68E23D2032100F5E1A5 /* CounterViewModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -733,7 +763,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E7FC67F23D0FAFA00F5E1A5 /* CounterTableViewCell.swift in Sources */,
+				3E7FC68F23D2032100F5E1A5 /* CounterViewModel.swift in Sources */,
 				3E7FC67123D0B6EB00F5E1A5 /* CountersTableViewController.swift in Sources */,
+				3E7FC68B23D1FC4E00F5E1A5 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
