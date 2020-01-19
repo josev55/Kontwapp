@@ -28,6 +28,13 @@
 		3E1BDF2A23D4EF08005CA5A7 /* CountersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BDF2923D4EF08005CA5A7 /* CountersListPresenter.swift */; };
 		3E1BDF2C23D4F96D005CA5A7 /* CountersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BDF2B23D4F96D005CA5A7 /* CountersListView.swift */; };
 		3E1BDF2E23D4FAAA005CA5A7 /* NoCountersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BDF2D23D4FAAA005CA5A7 /* NoCountersView.swift */; };
+		3E1BDF3123D50669005CA5A7 /* LoadingIndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BDF3023D50669005CA5A7 /* LoadingIndicatorManager.swift */; };
+		3E1BDF3723D50EE8005CA5A7 /* Snackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BDF3423D50EE8005CA5A7 /* Snackbar.swift */; };
+		3E1BDF3823D50EE8005CA5A7 /* SnackbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E1BDF3523D50EE8005CA5A7 /* SnackbarView.xib */; };
+		3E1BDF3923D50EE8005CA5A7 /* SnackbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BDF3623D50EE8005CA5A7 /* SnackbarView.swift */; };
+		3E1BDF4023D511BF005CA5A7 /* AddCounterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BDF3F23D511BF005CA5A7 /* AddCounterPresenter.swift */; };
+		3E1BDF4223D51500005CA5A7 /* AddCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BDF4123D51500005CA5A7 /* AddCounterView.swift */; };
+		3E1BDF4423D5161C005CA5A7 /* AddCounterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BDF4323D5161C005CA5A7 /* AddCounterUseCase.swift */; };
 		3E7FC5E723D0A4B400F5E1A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7FC5E623D0A4B400F5E1A5 /* AppDelegate.swift */; };
 		3E7FC5EE23D0A4BA00F5E1A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7FC5ED23D0A4BA00F5E1A5 /* Assets.xcassets */; };
 		3E7FC5F123D0A4BA00F5E1A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7FC5EF23D0A4BA00F5E1A5 /* LaunchScreen.storyboard */; };
@@ -74,6 +81,13 @@
 		3E1BDF2923D4EF08005CA5A7 /* CountersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountersListPresenter.swift; sourceTree = "<group>"; };
 		3E1BDF2B23D4F96D005CA5A7 /* CountersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountersListView.swift; sourceTree = "<group>"; };
 		3E1BDF2D23D4FAAA005CA5A7 /* NoCountersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoCountersView.swift; sourceTree = "<group>"; };
+		3E1BDF3023D50669005CA5A7 /* LoadingIndicatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorManager.swift; sourceTree = "<group>"; };
+		3E1BDF3423D50EE8005CA5A7 /* Snackbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snackbar.swift; sourceTree = "<group>"; };
+		3E1BDF3523D50EE8005CA5A7 /* SnackbarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SnackbarView.xib; sourceTree = "<group>"; };
+		3E1BDF3623D50EE8005CA5A7 /* SnackbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnackbarView.swift; sourceTree = "<group>"; };
+		3E1BDF3F23D511BF005CA5A7 /* AddCounterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCounterPresenter.swift; sourceTree = "<group>"; };
+		3E1BDF4123D51500005CA5A7 /* AddCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCounterView.swift; sourceTree = "<group>"; };
+		3E1BDF4323D5161C005CA5A7 /* AddCounterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCounterUseCase.swift; sourceTree = "<group>"; };
 		3E7FC5E323D0A4B400F5E1A5 /* Kontwapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kontwapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E7FC5E623D0A4B400F5E1A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E7FC5ED23D0A4BA00F5E1A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -174,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				3E1BDF2623D4EE17005CA5A7 /* FetchCountersUseCase.swift */,
+				3E1BDF4323D5161C005CA5A7 /* AddCounterUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -184,6 +199,76 @@
 				3E1BDF2923D4EF08005CA5A7 /* CountersListPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3E1BDF2F23D50659005CA5A7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3E1BDF3323D50EC5005CA5A7 /* Snackbar */,
+				3E1BDF3223D50EBD005CA5A7 /* Loading Indicator */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3E1BDF3223D50EBD005CA5A7 /* Loading Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				3E1BDF3023D50669005CA5A7 /* LoadingIndicatorManager.swift */,
+			);
+			path = "Loading Indicator";
+			sourceTree = "<group>";
+		};
+		3E1BDF3323D50EC5005CA5A7 /* Snackbar */ = {
+			isa = PBXGroup;
+			children = (
+				3E1BDF3423D50EE8005CA5A7 /* Snackbar.swift */,
+				3E1BDF3623D50EE8005CA5A7 /* SnackbarView.swift */,
+				3E1BDF3523D50EE8005CA5A7 /* SnackbarView.xib */,
+			);
+			path = Snackbar;
+			sourceTree = "<group>";
+		};
+		3E1BDF3A23D5112E005CA5A7 /* Add Counter */ = {
+			isa = PBXGroup;
+			children = (
+				3E1BDF3D23D51167005CA5A7 /* Model */,
+				3E1BDF3C23D51160005CA5A7 /* Presenter */,
+				3E1BDF3B23D51141005CA5A7 /* View */,
+			);
+			path = "Add Counter";
+			sourceTree = "<group>";
+		};
+		3E1BDF3B23D51141005CA5A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E1BDEED23D34AF0005CA5A7 /* AddCounterViewController.swift */,
+				3E1BDF4123D51500005CA5A7 /* AddCounterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E1BDF3C23D51160005CA5A7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3E1BDF3F23D511BF005CA5A7 /* AddCounterPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3E1BDF3D23D51167005CA5A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E1BDF3E23D51178005CA5A7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3E1BDF3A23D5112E005CA5A7 /* Add Counter */,
+				3E7FC68C23D202D400F5E1A5 /* Counters List */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		3E7FC5DA23D0A4B400F5E1A5 = {
@@ -207,6 +292,7 @@
 		3E7FC5E523D0A4B400F5E1A5 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				3E1BDF2F23D50659005CA5A7 /* Common */,
 				3E7FC60C23D0A54200F5E1A5 /* DataLayer */,
 				3E7FC62F23D0A55B00F5E1A5 /* DomainLayer */,
 				3E7FC65123D0A74A00F5E1A5 /* PresentationLayer */,
@@ -251,9 +337,9 @@
 		3E7FC65123D0A74A00F5E1A5 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				3E1BDF3E23D51178005CA5A7 /* Modules */,
 				3E1BDEEC23D34AD1005CA5A7 /* UI */,
 				3E7FC68A23D1FC3F00F5E1A5 /* Presentation Utils */,
-				3E7FC68C23D202D400F5E1A5 /* Counters List */,
 				3E1BDEF123D35D13005CA5A7 /* Presentation Assets.xcassets */,
 			);
 			path = PresentationLayer;
@@ -264,7 +350,6 @@
 			children = (
 				3E7FC67D23D0FADC00F5E1A5 /* Cells */,
 				3E7FC67023D0B6EB00F5E1A5 /* CountersTableViewController.swift */,
-				3E1BDEED23D34AF0005CA5A7 /* AddCounterViewController.swift */,
 				3E1BDF2B23D4F96D005CA5A7 /* CountersListView.swift */,
 				3E1BDF2D23D4FAAA005CA5A7 /* NoCountersView.swift */,
 			);
@@ -401,6 +486,7 @@
 				3E7FC5F123D0A4BA00F5E1A5 /* LaunchScreen.storyboard in Resources */,
 				3E1BDF1823D4DFA8005CA5A7 /* Counters.storyboard in Resources */,
 				3E1BDF1923D4DFAC005CA5A7 /* NoCountersView.xib in Resources */,
+				3E1BDF3823D50EE8005CA5A7 /* SnackbarView.xib in Resources */,
 				3E7FC5EE23D0A4BA00F5E1A5 /* Assets.xcassets in Resources */,
 				3E1BDF2123D4DFD4005CA5A7 /* Presentation Assets.xcassets in Resources */,
 			);
@@ -421,6 +507,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E1BDF1A23D4DFB1005CA5A7 /* AppStoryboard.swift in Sources */,
+				3E1BDF3723D50EE8005CA5A7 /* Snackbar.swift in Sources */,
 				3E1BDF2023D4DFCC005CA5A7 /* AddCounterViewController.swift in Sources */,
 				3E1BDF1F23D4DFC8005CA5A7 /* CountersTableViewController.swift in Sources */,
 				3E1BDF1523D4DF8C005CA5A7 /* NetworkConfigurable.swift in Sources */,
@@ -430,8 +517,11 @@
 				3E1BDF1623D4DF96005CA5A7 /* CounterEntity.swift in Sources */,
 				3E1BDF1C23D4DFB8005CA5A7 /* Color.swift in Sources */,
 				3E1BDF1B23D4DFB4005CA5A7 /* UIViewController+Storyboard.swift in Sources */,
+				3E1BDF4223D51500005CA5A7 /* AddCounterView.swift in Sources */,
 				3E7FC68523D1004300F5E1A5 /* CounterDiContainer.swift in Sources */,
 				3E1BDF2E23D4FAAA005CA5A7 /* NoCountersView.swift in Sources */,
+				3E1BDF3923D50EE8005CA5A7 /* SnackbarView.swift in Sources */,
+				3E1BDF4023D511BF005CA5A7 /* AddCounterPresenter.swift in Sources */,
 				3E1BDF2C23D4F96D005CA5A7 /* CountersListView.swift in Sources */,
 				3E1BDF2723D4EE17005CA5A7 /* FetchCountersUseCase.swift in Sources */,
 				3E1BDF1223D4DF7E005CA5A7 /* DefaultCountersRepository.swift in Sources */,
@@ -440,6 +530,8 @@
 				3E1BDF2423D4E969005CA5A7 /* APIEndpoints.swift in Sources */,
 				3E1BDF2A23D4EF08005CA5A7 /* CountersListPresenter.swift in Sources */,
 				3E1BDF1E23D4DFC4005CA5A7 /* CounterTableViewCell.swift in Sources */,
+				3E1BDF3123D50669005CA5A7 /* LoadingIndicatorManager.swift in Sources */,
+				3E1BDF4423D5161C005CA5A7 /* AddCounterUseCase.swift in Sources */,
 				3E7FC68723D1027100F5E1A5 /* AppDiContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

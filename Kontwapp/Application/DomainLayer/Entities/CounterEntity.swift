@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct CounterEntity {
+public struct CounterEntity: Decodable {
     let id: String
     let title: String
     let count: Int

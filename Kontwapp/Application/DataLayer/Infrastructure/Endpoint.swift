@@ -38,6 +38,7 @@ class Endpoint {
     func asUrlRequest(with config: NetworkConfigurable) -> URLRequest {
         var request = URLRequest(url: config.baseURL.appendingPathComponent(path))
         request.httpMethod = method.rawValue
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         var allHeaders: [String: String] = config.headers
         headerParamaters.forEach { allHeaders.updateValue($1, forKey: $0) }

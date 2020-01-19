@@ -6,17 +6,54 @@
 //  Copyright © 2020 Jose Vildosola. All rights reserved.
 //
 
-import Foundation
-import PresentationLayer
+import UIKit
 
 final class CounterDiContainer {
-    func makeCounterTableViewController() -> UIViewController {
-        return CountersTableViewController.create(viewControllerFactory: self)
+    struct Dependencies {
+        let serviceClient: ServiceClient
     }
     
-    func makeAddCounterViewController() -> UIViewController {
-        return AddCounterViewController.instantiate(from: .Counters)
+    private let dependencies: Dependencies
+    
+    init(dependencies: Dependencies) {
+        self.dependencies = dependencies
     }
+    
+    func makeCountersRepository() -> CountersRepository {
+        return DefaultCountersRepository(serviceClient: dependencies.serviceClient)
+    }
+    
+    func makeFetchCountersUseCase() -> FetchCountersUseCase {
+        return DefaultFetchUseCase(countersRepository: makeCountersRepository())
+    }
+    
+    func makeCountersListPresenter() -> CountersListPresenter {
+        return DefaultCountersListPresenter(fetchCountersUseCase: makeFetchCountersUseCase())
+    }
+    
+    func makeCounterTableViewController() -> UIViewController {
+        var presenter = makeCountersListPresenter()
+        let viewController = CountersTableViewController.create(presenter: presenter, viewControllerFactory: self)
+        presenter.countersListView = viewController as? CountersListView
+        return viewController
+    }
+    
+    func makeAddCounterUseCase() -> AddCounterUseCase {
+        return DefaultAddCounterUseCase(repository: makeCountersRepository())
+    }
+    
+    func makeAddCounterPresenter() -> AddCounterPresenter {
+        return DefaultAddCounterPresenter(addCounterUseCase: makeAddCounterUseCase())
+    }
+    
+    func makeAddCounterViewController(countersDelegate: CountersDelegate?) -> UIViewController {
+        var presenter = makeAddCounterPresenter()
+        let viewController = AddCounterViewController.create(countersDelegate: countersDelegate, addCounterPresenter: presenter)
+        presenter.addCounterView = viewController as? AddCounterView
+        return viewController
+    }
+    
+    
 }
 
 extension CounterDiContainer: MakeCountersTableViewControllerFactory {}

@@ -9,18 +9,17 @@
 import Foundation
 
 protocol FetchCountersUseCase {
-    func execute(completion: ServiceStatus<CounterEntity> -> Void)
+    func execute(completion: @escaping (ServiceStatus<[CounterEntity]>) -> Void)
 }
 
 final class DefaultFetchUseCase: FetchCountersUseCase {
-    
     private let countersRepository: CountersRepository!
     
     init(countersRepository: CountersRepository) {
         self.countersRepository = countersRepository
     }
     
-    func execute(completion: (ServiceStatus<CounterEntity>) -> Void) {
+    func execute(completion: @escaping (ServiceStatus<[CounterEntity]>) -> Void) {
         countersRepository.getCounters(completion: completion)
     }
 }
