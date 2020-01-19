@@ -10,6 +10,8 @@ import Foundation
 
 final class AppDiContainer {
     func makeCountersDiContainer() -> CounterDiContainer {
-        return CounterDiContainer()
+        let config = ApiDataNetworkConfig(baseURL: URL(string: "http://localhost:3000/api/v1")!, headers: ["Cache-Control": "no-cache"], queryParameters: [:])
+        let dependencies = CounterDiContainer.Dependencies(serviceClient: DefaultServiceClient(config: config))
+        return CounterDiContainer(dependencies: dependencies)
     }
 }

@@ -22,6 +22,7 @@ class CounterTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    @IBAction func counterValueChanged(_ sender: Any) {
+    @IBAction func counterValueChanged(_ sender: UIStepper) {
+        counterValueLabel.text = Int(sender.value).description
     }
 }

@@ -11,11 +11,17 @@ import Foundation
 final class DefaultCountersRepository {
     private let serviceClient: ServiceClient
     
-    init(serviceClient: ServiceClient)
+    init(serviceClient: ServiceClient){
+        self.serviceClient = serviceClient
+    }
 }
 
 extension DefaultCountersRepository: CountersRepository {
-    func getCounters(completion: (ServiceStatus<[CounterEntity]>) -> Void) -> URLSessionDataTask {
+    func addCounter(title: String, completion: @escaping (ServiceStatus<[CounterEntity]>) -> Void) -> URLSessionDataTask {
+        return serviceClient.request(with: APIEndpoints.addCounter(title: title), completion: completion)
+    }
+    
+    func getCounters(completion: @escaping (ServiceStatus<[CounterEntity]>) -> Void) -> URLSessionDataTask {
         return serviceClient.request(with: APIEndpoints.getCounters(query: nil), completion: completion)
     }
 }

@@ -1,5 +1,5 @@
 //
-//  CountersListView.swift
+//  AddCounterView.swift
 //  Kontwapp
 //
 //  Created by Jose Vildosola on 19-01-20.
@@ -8,6 +8,7 @@
 
 import Foundation
 
-protocol CountersListView {
-    func setCountersList(countersList: [CounterViewModel])
+protocol AddCounterView {
+    func counterDidSave(counters: [CounterViewModel])
+    func counterDidNotSave()
 }

@@ -7,9 +7,11 @@
 //
 
 import Foundation
-import DataLayer
 
 public protocol CountersRepository {
     @discardableResult
-    func getCounters(completion: (ServiceStatus<[CounterEntity]>) -> Void) -> URLSessionDataTask
+    func getCounters(completion: @escaping (ServiceStatus<[CounterEntity]>) -> Void) -> URLSessionDataTask
+    
+    @discardableResult
+    func addCounter(title: String, completion: @escaping (ServiceStatus<[CounterEntity]>) -> Void) -> URLSessionDataTask
 }

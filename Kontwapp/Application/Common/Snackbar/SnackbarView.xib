@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SnackbarView" customModule="SnackBarTests" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="i5V-g9-Dh3"/>
+                <outlet property="iconImageView" destination="llw-tC-MsD" id="ZlK-yl-3kr"/>
+                <outlet property="lblMessage" destination="Va2-hh-NYl" id="rFh-cB-Ke8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="548" height="124"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Fe-hp-oXh">
+                    <rect key="frame" x="0.0" y="0.0" width="548" height="124"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Shw-hq-wbQ">
+                            <rect key="frame" x="16" y="16" width="516" height="92"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LWI-aa-o4A">
+                                    <rect key="frame" x="0.0" y="0.0" width="25" height="92"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="success" translatesAutoresizingMaskIntoConstraints="NO" id="llw-tC-MsD">
+                                            <rect key="frame" x="0.0" y="33.5" width="25" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="25" id="Zyf-M2-NhR"/>
+                                                <constraint firstAttribute="height" constant="25" id="ojX-Rf-w8q"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="llw-tC-MsD" firstAttribute="centerY" secondItem="LWI-aa-o4A" secondAttribute="centerY" id="0cl-0f-bBc"/>
+                                        <constraint firstItem="llw-tC-MsD" firstAttribute="centerX" secondItem="LWI-aa-o4A" secondAttribute="centerX" id="ceH-qk-Xrm"/>
+                                        <constraint firstAttribute="width" constant="25" id="vaP-JT-D1j"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No se pudo actualizar tus datos, intenta nuevamente" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Va2-hh-NYl">
+                                    <rect key="frame" x="33" y="0.0" width="483" height="92"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="Shw-hq-wbQ" firstAttribute="centerY" secondItem="2Fe-hp-oXh" secondAttribute="centerY" id="6pt-bg-N7y"/>
+                        <constraint firstItem="Shw-hq-wbQ" firstAttribute="top" secondItem="2Fe-hp-oXh" secondAttribute="top" constant="16" id="KCO-eg-1QC"/>
+                        <constraint firstItem="Shw-hq-wbQ" firstAttribute="leading" secondItem="2Fe-hp-oXh" secondAttribute="leading" constant="16" id="Tg5-rt-4xm"/>
+                        <constraint firstAttribute="bottom" secondItem="Shw-hq-wbQ" secondAttribute="bottom" constant="16" id="Y0F-ZE-95c"/>
+                        <constraint firstAttribute="trailing" secondItem="Shw-hq-wbQ" secondAttribute="trailing" constant="16" id="oVL-Fl-lE6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="2Fe-hp-oXh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9a9-vQ-1MP"/>
+                <constraint firstAttribute="trailing" secondItem="2Fe-hp-oXh" secondAttribute="trailing" id="SQz-kf-fZf"/>
+                <constraint firstAttribute="bottom" secondItem="2Fe-hp-oXh" secondAttribute="bottom" id="gHg-LW-GOa"/>
+                <constraint firstItem="2Fe-hp-oXh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qS9-DB-3lR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="276.80000000000001" y="9.8950524737631191"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="success" width="22" height="23"/>
+    </resources>
+</document>

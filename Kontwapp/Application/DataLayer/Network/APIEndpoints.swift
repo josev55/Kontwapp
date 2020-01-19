@@ -12,4 +12,8 @@ final class APIEndpoints {
     static func getCounters(query: String?) -> Endpoint {
         return Endpoint(path: "/counters")
     }
+    
+    static func addCounter(title: String) -> Endpoint {
+        return Endpoint(path: "/counter", method: .post, queryParameters: [:], headerParamaters: [:], bodyParamaters: ["title": title])
+    }
 }
