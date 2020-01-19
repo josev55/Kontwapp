@@ -11,6 +11,12 @@ import PresentationLayer
 
 final class CounterDiContainer {
     func makeCounterTableViewController() -> UIViewController {
-        return CountersTableViewController.instantiate(from: .Counters)
+        return CountersTableViewController.create(viewControllerFactory: self)
+    }
+    
+    func makeAddCounterViewController() -> UIViewController {
+        return AddCounterViewController.instantiate(from: .Counters)
     }
 }
+
+extension CounterDiContainer: MakeCountersTableViewControllerFactory {}
