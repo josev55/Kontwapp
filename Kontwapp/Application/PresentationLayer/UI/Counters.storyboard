@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Counters Table View Controller-->
+        <scene sceneID="3zz-CA-PyP">
+            <objects>
+                <tableViewController storyboardIdentifier="CountersTableViewController" id="chu-5y-6jz" customClass="CountersTableViewController" customModule="PresentationLayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="SGQ-hh-Gge">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="counterCell" rowHeight="100" id="pVA-A2-x6j" customClass="CounterTableViewCell" customModule="PresentationLayer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pVA-A2-x6j" id="15S-NQ-7CQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSD-u5-mVE">
+                                            <rect key="frame" x="28" y="40" width="32" height="20"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="U7K-XH-zpO">
+                                            <rect key="frame" x="301" y="35.5" width="94" height="29"/>
+                                            <color key="tintColor" red="0.0" green="0.56470588235294117" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="counterValueChanged:" destination="pVA-A2-x6j" eventType="valueChanged" id="UOS-JD-zE9"/>
+                                            </connections>
+                                        </stepper>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AkP-bo-V8b">
+                                            <rect key="frame" x="283.5" y="40" width="9.5" height="20"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="U7K-XH-zpO" firstAttribute="centerY" secondItem="15S-NQ-7CQ" secondAttribute="centerY" id="6U7-zm-xaL"/>
+                                        <constraint firstItem="AkP-bo-V8b" firstAttribute="centerY" secondItem="15S-NQ-7CQ" secondAttribute="centerY" id="9oO-aM-bTb"/>
+                                        <constraint firstItem="U7K-XH-zpO" firstAttribute="trailing" secondItem="15S-NQ-7CQ" secondAttribute="trailingMargin" constant="0.80000000000000004" id="IJ0-A2-WhB"/>
+                                        <constraint firstItem="SSD-u5-mVE" firstAttribute="centerY" secondItem="15S-NQ-7CQ" secondAttribute="centerY" id="P3O-em-VjH"/>
+                                        <constraint firstItem="U7K-XH-zpO" firstAttribute="leading" secondItem="AkP-bo-V8b" secondAttribute="trailing" constant="8" id="mOo-CC-azN"/>
+                                        <constraint firstItem="SSD-u5-mVE" firstAttribute="leading" secondItem="15S-NQ-7CQ" secondAttribute="leadingMargin" constant="8" id="v3T-OK-0Ac"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="counterTitle" destination="SSD-u5-mVE" id="lFf-Br-3uI"/>
+                                    <outlet property="counterValueLabel" destination="AkP-bo-V8b" id="ilh-3E-UPm"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="chu-5y-6jz" id="fpP-na-ZcE"/>
+                            <outlet property="delegate" destination="chu-5y-6jz" id="OP3-me-TVC"/>
+                        </connections>
+                    </tableView>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fgR-4i-Y3r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.5999999999999996" y="-90.404797601199405"/>
+        </scene>
+        <!--Add Counter View Controller-->
+        <scene sceneID="mgV-Wy-K3z">
+            <objects>
+                <viewController storyboardIdentifier="AddCounterViewController" id="wqI-Ay-ZhH" customClass="AddCounterViewController" customModule="PresentationLayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2f5-ri-2Jd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_icon" translatesAutoresizingMaskIntoConstraints="NO" id="W6O-NS-V8O">
+                                <rect key="frame" x="142" y="204" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="NRl-l8-U3T"/>
+                                    <constraint firstAttribute="width" constant="130" id="rtK-PW-zcG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYu-nf-5tm">
+                                <rect key="frame" x="70" y="434" width="274" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter counter name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="o8j-Am-KzZ">
+                                <rect key="frame" x="70" y="467" width="274" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rx-hK-eTt">
+                                <rect key="frame" x="20" y="748" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="TWm-A7-jX5"/>
+                                </constraints>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addCounterTapped:" destination="wqI-Ay-ZhH" eventType="touchUpInside" id="HId-Yb-7sZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DYu-nf-5tm" firstAttribute="top" secondItem="W6O-NS-V8O" secondAttribute="bottom" constant="100" id="Bmn-IG-Jtd"/>
+                            <constraint firstItem="o8j-Am-KzZ" firstAttribute="top" secondItem="DYu-nf-5tm" secondAttribute="bottom" constant="12" id="D6F-jw-hlB"/>
+                            <constraint firstItem="o8j-Am-KzZ" firstAttribute="leading" secondItem="ASD-vG-ksQ" secondAttribute="leading" constant="70" id="MT6-BT-MS3"/>
+                            <constraint firstItem="ASD-vG-ksQ" firstAttribute="trailing" secondItem="0rx-hK-eTt" secondAttribute="trailing" constant="20" id="T3r-Lr-vyg"/>
+                            <constraint firstItem="W6O-NS-V8O" firstAttribute="centerY" secondItem="2f5-ri-2Jd" secondAttribute="centerY" multiplier="0.6" id="aIa-Mw-F1o"/>
+                            <constraint firstItem="ASD-vG-ksQ" firstAttribute="bottom" secondItem="0rx-hK-eTt" secondAttribute="bottom" constant="54" id="aNs-mA-JqY"/>
+                            <constraint firstItem="ASD-vG-ksQ" firstAttribute="trailing" secondItem="o8j-Am-KzZ" secondAttribute="trailing" constant="70" id="eVp-EF-jmN"/>
+                            <constraint firstItem="0rx-hK-eTt" firstAttribute="leading" secondItem="ASD-vG-ksQ" secondAttribute="leading" constant="20" id="qVs-YD-IwI"/>
+                            <constraint firstItem="W6O-NS-V8O" firstAttribute="centerX" secondItem="2f5-ri-2Jd" secondAttribute="centerX" id="tPN-XL-vnv"/>
+                            <constraint firstItem="ASD-vG-ksQ" firstAttribute="trailing" secondItem="DYu-nf-5tm" secondAttribute="trailing" constant="70" id="wbS-BS-EPh"/>
+                            <constraint firstItem="DYu-nf-5tm" firstAttribute="leading" secondItem="ASD-vG-ksQ" secondAttribute="leading" constant="70" id="yzL-U7-xkw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ASD-vG-ksQ"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="addCounterButton" destination="0rx-hK-eTt" id="rJo-DD-tlw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wk0-xG-VNP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076.8115942028987" y="-91.071428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add_icon" width="512" height="512"/>
+    </resources>
+</document>
