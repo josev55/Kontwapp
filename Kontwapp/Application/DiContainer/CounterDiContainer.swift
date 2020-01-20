@@ -27,8 +27,20 @@ final class CounterDiContainer {
         return DefaultFetchUseCase(countersRepository: makeCountersRepository())
     }
     
+    func makeIncrementCounterUseCase() -> IncrementCounterUseCase {
+        return DefaultIncrementCounterUseCase(repository: makeCountersRepository())
+    }
+    
+    func makeDecrementCounterUseCase() -> DecrementCounterUseCase {
+        return DefaultDecrementCounterUseCase(repository: makeCountersRepository())
+    }
+    
+    func makeDeleteCounterUseCase() -> DeleteCounterUseCase {
+        return DefaultDeleteCounterUseCase(repository: makeCountersRepository())
+    }
+    
     func makeCountersListPresenter() -> CountersListPresenter {
-        return DefaultCountersListPresenter(fetchCountersUseCase: makeFetchCountersUseCase())
+        return DefaultCountersListPresenter(fetchCountersUseCase: makeFetchCountersUseCase(), incrementCounterUseCase: makeIncrementCounterUseCase(), decrementCounterUseCase: makeDecrementCounterUseCase(), deleteCounterUseCase: makeDeleteCounterUseCase())
     }
     
     func makeCounterTableViewController() -> UIViewController {

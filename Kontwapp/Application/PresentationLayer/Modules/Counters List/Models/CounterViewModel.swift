@@ -9,6 +9,7 @@
 import Foundation
 
 struct CounterViewModel {
+    var id: String
     var title: String
     var currentValue: Int
 }

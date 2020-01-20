@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E166F2F23D602DC0012F98D /* DeleteCounterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E166F2E23D602DC0012F98D /* DeleteCounterUseCase.swift */; };
+		3E166F3323D6119F0012F98D /* CounterDiContainerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E166F3223D6119F0012F98D /* CounterDiContainerSpec.swift */; };
+		3E166F3523D616A00012F98D /* AppDiContainerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E166F3423D616A00012F98D /* AppDiContainerSpec.swift */; };
 		3E1BDF1223D4DF7E005CA5A7 /* DefaultCountersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BDF0E23D4DCBA005CA5A7 /* DefaultCountersRepository.swift */; };
 		3E1BDF1323D4DF82005CA5A7 /* ServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BDF0023D385AB005CA5A7 /* ServiceClient.swift */; };
 		3E1BDF1423D4DF84005CA5A7 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BDF0223D38643005CA5A7 /* Endpoint.swift */; };
@@ -35,12 +38,27 @@
 		3E1BDF4023D511BF005CA5A7 /* AddCounterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BDF3F23D511BF005CA5A7 /* AddCounterPresenter.swift */; };
 		3E1BDF4223D51500005CA5A7 /* AddCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BDF4123D51500005CA5A7 /* AddCounterView.swift */; };
 		3E1BDF4423D5161C005CA5A7 /* AddCounterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BDF4323D5161C005CA5A7 /* AddCounterUseCase.swift */; };
+		3E1BDF4823D5D145005CA5A7 /* IncrementCounterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BDF4723D5D145005CA5A7 /* IncrementCounterUseCase.swift */; };
+		3E1BDF4A23D5DAD2005CA5A7 /* DecrementCounterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BDF4923D5DAD2005CA5A7 /* DecrementCounterUseCase.swift */; };
 		3E7FC5E723D0A4B400F5E1A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7FC5E623D0A4B400F5E1A5 /* AppDelegate.swift */; };
 		3E7FC5EE23D0A4BA00F5E1A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7FC5ED23D0A4BA00F5E1A5 /* Assets.xcassets */; };
 		3E7FC5F123D0A4BA00F5E1A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7FC5EF23D0A4BA00F5E1A5 /* LaunchScreen.storyboard */; };
 		3E7FC5FC23D0A4BB00F5E1A5 /* KontwappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7FC5FB23D0A4BB00F5E1A5 /* KontwappTests.swift */; };
 		3E7FC68523D1004300F5E1A5 /* CounterDiContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7FC67523D0BBFA00F5E1A5 /* CounterDiContainer.swift */; };
 		3E7FC68723D1027100F5E1A5 /* AppDiContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7FC67323D0BBEA00F5E1A5 /* AppDiContainer.swift */; };
+		3ED83A3723D62FFE00DFAC3C /* EndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83A3623D62FFE00DFAC3C /* EndpointSpec.swift */; };
+		3ED83A3923D6347D00DFAC3C /* NetworkConfigurableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83A3823D6347D00DFAC3C /* NetworkConfigurableSpec.swift */; };
+		3ED83A3C23D6358F00DFAC3C /* DefaultCountersRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83A3B23D6358F00DFAC3C /* DefaultCountersRepositorySpec.swift */; };
+		3ED83A3F23D63BA000DFAC3C /* APIEndpointsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83A3E23D63BA000DFAC3C /* APIEndpointsSpec.swift */; };
+		3ED83A4323D63D1800DFAC3C /* FetchCountersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83A4223D63D1800DFAC3C /* FetchCountersUseCase.swift */; };
+		3ED83A4523D63E7300DFAC3C /* AddCounterUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83A4423D63E7300DFAC3C /* AddCounterUseCaseSpec.swift */; };
+		3ED83A4723D63F9F00DFAC3C /* IncrementCounterUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83A4623D63F9F00DFAC3C /* IncrementCounterUseCaseSpec.swift */; };
+		3ED83A4923D6406500DFAC3C /* DecrementCounterUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83A4823D6406500DFAC3C /* DecrementCounterUseCaseSpec.swift */; };
+		3ED83A4B23D640B800DFAC3C /* DeleteCounterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83A4A23D640B800DFAC3C /* DeleteCounterUseCase.swift */; };
+		3ED83A5023D6433200DFAC3C /* CountersListPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83A4F23D6433200DFAC3C /* CountersListPresenterSpec.swift */; };
+		3ED83A5423D64A3E00DFAC3C /* AddCounterPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83A5323D64A3E00DFAC3C /* AddCounterPresenterSpec.swift */; };
+		3ED83A5723D64C8200DFAC3C /* SnackbarViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83A5623D64C8200DFAC3C /* SnackbarViewSpec.swift */; };
+		3ED83A5923D64CDB00DFAC3C /* SnackbarSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83A5823D64CDB00DFAC3C /* SnackbarSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +85,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3E166F2E23D602DC0012F98D /* DeleteCounterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteCounterUseCase.swift; sourceTree = "<group>"; };
+		3E166F3223D6119F0012F98D /* CounterDiContainerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterDiContainerSpec.swift; sourceTree = "<group>"; };
+		3E166F3423D616A00012F98D /* AppDiContainerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDiContainerSpec.swift; sourceTree = "<group>"; };
 		3E1BDEED23D34AF0005CA5A7 /* AddCounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCounterViewController.swift; sourceTree = "<group>"; };
 		3E1BDEF123D35D13005CA5A7 /* Presentation Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Presentation Assets.xcassets"; sourceTree = "<group>"; };
 		3E1BDEF323D36BD2005CA5A7 /* NoCountersView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoCountersView.xib; sourceTree = "<group>"; };
@@ -88,6 +109,8 @@
 		3E1BDF3F23D511BF005CA5A7 /* AddCounterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCounterPresenter.swift; sourceTree = "<group>"; };
 		3E1BDF4123D51500005CA5A7 /* AddCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCounterView.swift; sourceTree = "<group>"; };
 		3E1BDF4323D5161C005CA5A7 /* AddCounterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCounterUseCase.swift; sourceTree = "<group>"; };
+		3E1BDF4723D5D145005CA5A7 /* IncrementCounterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementCounterUseCase.swift; sourceTree = "<group>"; };
+		3E1BDF4923D5DAD2005CA5A7 /* DecrementCounterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecrementCounterUseCase.swift; sourceTree = "<group>"; };
 		3E7FC5E323D0A4B400F5E1A5 /* Kontwapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kontwapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E7FC5E623D0A4B400F5E1A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E7FC5ED23D0A4BA00F5E1A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,6 +128,19 @@
 		3E7FC68323D0FE8F00F5E1A5 /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
 		3E7FC68823D1FB5500F5E1A5 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		3E7FC68E23D2032100F5E1A5 /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
+		3ED83A3623D62FFE00DFAC3C /* EndpointSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointSpec.swift; sourceTree = "<group>"; };
+		3ED83A3823D6347D00DFAC3C /* NetworkConfigurableSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigurableSpec.swift; sourceTree = "<group>"; };
+		3ED83A3B23D6358F00DFAC3C /* DefaultCountersRepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCountersRepositorySpec.swift; sourceTree = "<group>"; };
+		3ED83A3E23D63BA000DFAC3C /* APIEndpointsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpointsSpec.swift; sourceTree = "<group>"; };
+		3ED83A4223D63D1800DFAC3C /* FetchCountersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCountersUseCase.swift; sourceTree = "<group>"; };
+		3ED83A4423D63E7300DFAC3C /* AddCounterUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCounterUseCaseSpec.swift; sourceTree = "<group>"; };
+		3ED83A4623D63F9F00DFAC3C /* IncrementCounterUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementCounterUseCaseSpec.swift; sourceTree = "<group>"; };
+		3ED83A4823D6406500DFAC3C /* DecrementCounterUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecrementCounterUseCaseSpec.swift; sourceTree = "<group>"; };
+		3ED83A4A23D640B800DFAC3C /* DeleteCounterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteCounterUseCase.swift; sourceTree = "<group>"; };
+		3ED83A4F23D6433200DFAC3C /* CountersListPresenterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountersListPresenterSpec.swift; sourceTree = "<group>"; };
+		3ED83A5323D64A3E00DFAC3C /* AddCounterPresenterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCounterPresenterSpec.swift; sourceTree = "<group>"; };
+		3ED83A5623D64C8200DFAC3C /* SnackbarViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackbarViewSpec.swift; sourceTree = "<group>"; };
+		3ED83A5823D64CDB00DFAC3C /* SnackbarSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackbarSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +161,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E166F3023D6117F0012F98D /* DiContainer */ = {
+			isa = PBXGroup;
+			children = (
+				3E166F3223D6119F0012F98D /* CounterDiContainerSpec.swift */,
+				3E166F3423D616A00012F98D /* AppDiContainerSpec.swift */,
+			);
+			path = DiContainer;
+			sourceTree = "<group>";
+		};
 		3E1BDEEC23D34AD1005CA5A7 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +234,9 @@
 			children = (
 				3E1BDF2623D4EE17005CA5A7 /* FetchCountersUseCase.swift */,
 				3E1BDF4323D5161C005CA5A7 /* AddCounterUseCase.swift */,
+				3E1BDF4723D5D145005CA5A7 /* IncrementCounterUseCase.swift */,
+				3E1BDF4923D5DAD2005CA5A7 /* DecrementCounterUseCase.swift */,
+				3E166F2E23D602DC0012F98D /* DeleteCounterUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -308,6 +356,11 @@
 		3E7FC5FA23D0A4BB00F5E1A5 /* KontwappTests */ = {
 			isa = PBXGroup;
 			children = (
+				3ED83A5523D64C7500DFAC3C /* Common */,
+				3ED83A4C23D641D600DFAC3C /* PresentationLayer */,
+				3ED83A4023D63CFD00DFAC3C /* DomainLayer */,
+				3ED83A3423D62FE400DFAC3C /* DataLayer */,
+				3E166F3023D6117F0012F98D /* DiContainer */,
 				3E7FC5FB23D0A4BB00F5E1A5 /* KontwappTests.swift */,
 				3E7FC5FD23D0A4BB00F5E1A5 /* Info.plist */,
 			);
@@ -399,6 +452,111 @@
 				3E7FC68E23D2032100F5E1A5 /* CounterViewModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		3ED83A3423D62FE400DFAC3C /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				3ED83A3D23D63B9000DFAC3C /* Network */,
+				3ED83A3A23D6357800DFAC3C /* Repositories */,
+				3ED83A3523D62FE900DFAC3C /* Infrastructure */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		3ED83A3523D62FE900DFAC3C /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				3ED83A3623D62FFE00DFAC3C /* EndpointSpec.swift */,
+				3ED83A3823D6347D00DFAC3C /* NetworkConfigurableSpec.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		3ED83A3A23D6357800DFAC3C /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				3ED83A3B23D6358F00DFAC3C /* DefaultCountersRepositorySpec.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		3ED83A3D23D63B9000DFAC3C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3ED83A3E23D63BA000DFAC3C /* APIEndpointsSpec.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3ED83A4023D63CFD00DFAC3C /* DomainLayer */ = {
+			isa = PBXGroup;
+			children = (
+				3ED83A4123D63D0400DFAC3C /* UseCases */,
+			);
+			path = DomainLayer;
+			sourceTree = "<group>";
+		};
+		3ED83A4123D63D0400DFAC3C /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				3ED83A4223D63D1800DFAC3C /* FetchCountersUseCase.swift */,
+				3ED83A4423D63E7300DFAC3C /* AddCounterUseCaseSpec.swift */,
+				3ED83A4623D63F9F00DFAC3C /* IncrementCounterUseCaseSpec.swift */,
+				3ED83A4823D6406500DFAC3C /* DecrementCounterUseCaseSpec.swift */,
+				3ED83A4A23D640B800DFAC3C /* DeleteCounterUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		3ED83A4C23D641D600DFAC3C /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				3ED83A5123D64A2000DFAC3C /* Add Counter */,
+				3ED83A4D23D642DC00DFAC3C /* Counters List */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		3ED83A4D23D642DC00DFAC3C /* Counters List */ = {
+			isa = PBXGroup;
+			children = (
+				3ED83A4E23D642EC00DFAC3C /* Presenter */,
+			);
+			path = "Counters List";
+			sourceTree = "<group>";
+		};
+		3ED83A4E23D642EC00DFAC3C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3ED83A4F23D6433200DFAC3C /* CountersListPresenterSpec.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3ED83A5123D64A2000DFAC3C /* Add Counter */ = {
+			isa = PBXGroup;
+			children = (
+				3ED83A5223D64A2F00DFAC3C /* Presenter */,
+			);
+			path = "Add Counter";
+			sourceTree = "<group>";
+		};
+		3ED83A5223D64A2F00DFAC3C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3ED83A5323D64A3E00DFAC3C /* AddCounterPresenterSpec.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3ED83A5523D64C7500DFAC3C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3ED83A5623D64C8200DFAC3C /* SnackbarViewSpec.swift */,
+				3ED83A5823D64CDB00DFAC3C /* SnackbarSpec.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -507,6 +665,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E1BDF1A23D4DFB1005CA5A7 /* AppStoryboard.swift in Sources */,
+				3E166F2F23D602DC0012F98D /* DeleteCounterUseCase.swift in Sources */,
 				3E1BDF3723D50EE8005CA5A7 /* Snackbar.swift in Sources */,
 				3E1BDF2023D4DFCC005CA5A7 /* AddCounterViewController.swift in Sources */,
 				3E1BDF1F23D4DFC8005CA5A7 /* CountersTableViewController.swift in Sources */,
@@ -520,10 +679,12 @@
 				3E1BDF4223D51500005CA5A7 /* AddCounterView.swift in Sources */,
 				3E7FC68523D1004300F5E1A5 /* CounterDiContainer.swift in Sources */,
 				3E1BDF2E23D4FAAA005CA5A7 /* NoCountersView.swift in Sources */,
+				3E1BDF4A23D5DAD2005CA5A7 /* DecrementCounterUseCase.swift in Sources */,
 				3E1BDF3923D50EE8005CA5A7 /* SnackbarView.swift in Sources */,
 				3E1BDF4023D511BF005CA5A7 /* AddCounterPresenter.swift in Sources */,
 				3E1BDF2C23D4F96D005CA5A7 /* CountersListView.swift in Sources */,
 				3E1BDF2723D4EE17005CA5A7 /* FetchCountersUseCase.swift in Sources */,
+				3E1BDF4823D5D145005CA5A7 /* IncrementCounterUseCase.swift in Sources */,
 				3E1BDF1223D4DF7E005CA5A7 /* DefaultCountersRepository.swift in Sources */,
 				3E1BDF1723D4DF9C005CA5A7 /* CountersRepository.swift in Sources */,
 				3E1BDF1423D4DF84005CA5A7 /* Endpoint.swift in Sources */,
@@ -540,7 +701,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ED83A5423D64A3E00DFAC3C /* AddCounterPresenterSpec.swift in Sources */,
+				3E166F3523D616A00012F98D /* AppDiContainerSpec.swift in Sources */,
+				3ED83A4B23D640B800DFAC3C /* DeleteCounterUseCase.swift in Sources */,
+				3ED83A3723D62FFE00DFAC3C /* EndpointSpec.swift in Sources */,
+				3ED83A3F23D63BA000DFAC3C /* APIEndpointsSpec.swift in Sources */,
+				3ED83A5723D64C8200DFAC3C /* SnackbarViewSpec.swift in Sources */,
+				3ED83A4923D6406500DFAC3C /* DecrementCounterUseCaseSpec.swift in Sources */,
+				3ED83A4323D63D1800DFAC3C /* FetchCountersUseCase.swift in Sources */,
+				3ED83A4523D63E7300DFAC3C /* AddCounterUseCaseSpec.swift in Sources */,
+				3ED83A5023D6433200DFAC3C /* CountersListPresenterSpec.swift in Sources */,
+				3ED83A3923D6347D00DFAC3C /* NetworkConfigurableSpec.swift in Sources */,
+				3ED83A3C23D6358F00DFAC3C /* DefaultCountersRepositorySpec.swift in Sources */,
+				3E166F3323D6119F0012F98D /* CounterDiContainerSpec.swift in Sources */,
+				3ED83A5923D64CDB00DFAC3C /* SnackbarSpec.swift in Sources */,
 				3E7FC5FC23D0A4BB00F5E1A5 /* KontwappTests.swift in Sources */,
+				3ED83A4723D63F9F00DFAC3C /* IncrementCounterUseCaseSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

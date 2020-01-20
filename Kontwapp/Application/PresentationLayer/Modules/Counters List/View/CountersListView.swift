@@ -10,5 +10,8 @@ import Foundation
 
 protocol CountersListView {
     func setCountersList(countersList: [CounterViewModel])
+    func updateCounterValueDidFail()
     func showError()
+    func deleteCounterSucceed(id: String, counters: [CounterEntity])
+    func deleteCounterdidFail()
 }

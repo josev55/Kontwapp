@@ -20,19 +20,19 @@ class Endpoint {
     public var path: String
     public var method: HTTPMethodType
     public var queryParameters: [String: Any]
-    public var headerParamaters: [String: String]
-    public var bodyParamaters: [String: Any]
+    public var headerParameters: [String: String]
+    public var bodyParameters: [String: Any]
     
     init(path: String,
          method: HTTPMethodType = .get,
          queryParameters: [String: Any] = [:],
-         headerParamaters: [String: String] = [:],
-         bodyParamaters: [String: Any] = [:]) {
+         headerParameters: [String: String] = [:],
+         bodyParameters: [String: Any] = [:]) {
         self.path = path
         self.method = method
         self.queryParameters = queryParameters
-        self.headerParamaters = headerParamaters
-        self.bodyParamaters = bodyParamaters
+        self.headerParameters = headerParameters
+        self.bodyParameters = bodyParameters
     }
     
     func asUrlRequest(with config: NetworkConfigurable) -> URLRequest {
@@ -41,22 +41,23 @@ class Endpoint {
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         var allHeaders: [String: String] = config.headers
-        headerParamaters.forEach { allHeaders.updateValue($1, forKey: $0) }
+        headerParameters.forEach { allHeaders.updateValue($1, forKey: $0) }
         
         request.allHTTPHeaderFields = allHeaders
         
         if !queryParameters.isEmpty {
-            let urlComponents = URLComponents(url: config.baseURL.appendingPathComponent(path), resolvingAgainstBaseURL: false)
+            var urlComponents = URLComponents(url: config.baseURL.appendingPathComponent(path), resolvingAgainstBaseURL: false)
             var queryItems = [URLQueryItem]()
             queryParameters.forEach { (arg) in
                 let (key, value) = arg
                 queryItems.append(URLQueryItem(name: key, value: value as? String))
             }
+            urlComponents?.queryItems = queryItems
             request.url = urlComponents?.url
         }
         
-        if !bodyParamaters.isEmpty {
-            request.httpBody = try? JSONSerialization.data(withJSONObject: bodyParamaters)
+        if !bodyParameters.isEmpty {
+            request.httpBody = try? JSONSerialization.data(withJSONObject: bodyParameters)
         }
         
         
