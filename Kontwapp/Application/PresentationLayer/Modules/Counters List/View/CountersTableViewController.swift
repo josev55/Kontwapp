@@ -84,16 +84,27 @@ class CountersTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "counterCell", for: indexPath) as! CounterTableViewCell
         let counterData = countersDataSource[indexPath.row]
         
-        cell.counterTitle.text = counterData.title
-        cell.counterValueLabel.text = String(counterData.currentValue)
+        cell.fillCell(counter: counterData)
+        cell.valueUpdated = { [weak self] didIncrement in
+            guard let strongSelf = self else { return }
+            strongSelf.loadingIndicatorManager.addLoadingMessage("Updating counter value", view: strongSelf.view)
+            if didIncrement {
+                strongSelf.countersListPresenter.incrementCounter(id: counterData.id)
+            } else {
+                strongSelf.countersListPresenter.decrementCounter(id: counterData.id)
+            }
+        }
         
         return cell
     }
     
     override public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            countersDataSource.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .bottom)
+            let item = self.countersDataSource[indexPath.row]
+            DispatchQueue.main.async {
+                self.loadingIndicatorManager.addLoadingMessage("Deleting counter", view: self.view)
+            }
+            self.countersListPresenter.deleteCounter(id: item.id)
         }
     }
     
@@ -107,6 +118,33 @@ protocol MakeCountersTableViewControllerFactory {
 }
 
 extension CountersTableViewController: CountersListView {
+    func deleteCounterSucceed(id: String, counters: [CounterEntity]) {
+        let counterIdx = countersDataSource.firstIndex { (counter) -> Bool in
+            counter.id == id
+        }
+        DispatchQueue.main.async {
+            self.loadingIndicatorManager.removeLoadingIndicator()
+            if let idx = counterIdx {
+                self.countersDataSource.remove(at: idx)
+                self.tableView.deleteRows(at: [IndexPath(row: idx, section: 0)], with: .bottom)
+            }
+        }
+    }
+    
+    func deleteCounterdidFail() {
+        DispatchQueue.main.async {
+            self.loadingIndicatorManager.removeLoadingIndicator()
+            Snackbar.show(.Failure, message: "Failed to delete counter")
+        }
+    }
+    
+    func updateCounterValueDidFail() {
+        DispatchQueue.main.async {
+            self.loadingIndicatorManager.removeLoadingIndicator()
+            Snackbar.show(.Failure, message: "There was a problem updating counter value")
+        }
+    }
+    
     func setCountersList(countersList: [CounterViewModel]) {
         self.countersDataSource = countersList
         DispatchQueue.main.async {

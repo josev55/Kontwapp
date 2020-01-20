@@ -27,20 +27,29 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSD-u5-mVE">
-                                            <rect key="frame" x="28" y="40" width="32" height="20"/>
+                                            <rect key="frame" x="28" y="25" width="225" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="Ffs-yo-Pmi"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="U7K-XH-zpO">
                                             <rect key="frame" x="301" y="35.5" width="94" height="29"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="94" id="ODf-Dq-wAP"/>
+                                            </constraints>
                                             <color key="tintColor" red="0.0" green="0.56470588235294117" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <action selector="counterValueChanged:" destination="pVA-A2-x6j" eventType="valueChanged" id="UOS-JD-zE9"/>
                                             </connections>
                                         </stepper>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AkP-bo-V8b">
-                                            <rect key="frame" x="283.5" y="40" width="9.5" height="20"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AkP-bo-V8b">
+                                            <rect key="frame" x="273" y="40" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="CyQ-gs-gmf"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -51,11 +60,13 @@
                                         <constraint firstItem="AkP-bo-V8b" firstAttribute="centerY" secondItem="15S-NQ-7CQ" secondAttribute="centerY" id="9oO-aM-bTb"/>
                                         <constraint firstItem="U7K-XH-zpO" firstAttribute="trailing" secondItem="15S-NQ-7CQ" secondAttribute="trailingMargin" constant="0.80000000000000004" id="IJ0-A2-WhB"/>
                                         <constraint firstItem="SSD-u5-mVE" firstAttribute="centerY" secondItem="15S-NQ-7CQ" secondAttribute="centerY" id="P3O-em-VjH"/>
+                                        <constraint firstItem="AkP-bo-V8b" firstAttribute="leading" secondItem="SSD-u5-mVE" secondAttribute="trailing" constant="20" id="Stw-BZ-KrC"/>
                                         <constraint firstItem="U7K-XH-zpO" firstAttribute="leading" secondItem="AkP-bo-V8b" secondAttribute="trailing" constant="8" id="mOo-CC-azN"/>
                                         <constraint firstItem="SSD-u5-mVE" firstAttribute="leading" secondItem="15S-NQ-7CQ" secondAttribute="leadingMargin" constant="8" id="v3T-OK-0Ac"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="counterStepper" destination="U7K-XH-zpO" id="edd-GW-fWJ"/>
                                     <outlet property="counterTitle" destination="SSD-u5-mVE" id="lFf-Br-3uI"/>
                                     <outlet property="counterValueLabel" destination="AkP-bo-V8b" id="ilh-3E-UPm"/>
                                 </connections>

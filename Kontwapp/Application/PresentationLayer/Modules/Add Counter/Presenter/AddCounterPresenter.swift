@@ -27,7 +27,7 @@ final class DefaultAddCounterPresenter: AddCounterPresenter {
             switch serviceStatus {
             case .success(let counters):
                 let models = counters?.map({ (counter) -> CounterViewModel in
-                    return CounterViewModel(title: counter.title, currentValue: counter.count)
+                    return CounterViewModel(id: counter.id,title: counter.title, currentValue: counter.count)
                 })
                 self.addCounterView?.counterDidSave(counters: models ?? [])
             case .failure( _):

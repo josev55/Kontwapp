@@ -14,4 +14,13 @@ public protocol CountersRepository {
     
     @discardableResult
     func addCounter(title: String, completion: @escaping (ServiceStatus<[CounterEntity]>) -> Void) -> URLSessionDataTask
+    
+    @discardableResult
+    func incrementCounter(id: String, completion: @escaping (ServiceStatus<[CounterEntity]>) -> Void) -> URLSessionDataTask
+    
+    @discardableResult
+    func decrementCounter(id: String, completion: @escaping (ServiceStatus<[CounterEntity]>) -> Void) -> URLSessionDataTask
+    
+    @discardableResult
+    func deleteCounter(id: String, completion: @escaping (ServiceStatus<[CounterEntity]>) -> Void) -> URLSessionDataTask
 }

@@ -14,6 +14,18 @@ final class APIEndpoints {
     }
     
     static func addCounter(title: String) -> Endpoint {
-        return Endpoint(path: "/counter", method: .post, queryParameters: [:], headerParamaters: [:], bodyParamaters: ["title": title])
+        return Endpoint(path: "/counter", method: .post, queryParameters: [:], headerParameters: [:], bodyParameters: ["title": title])
+    }
+    
+    static func incrementCounter(id: String) -> Endpoint {
+        return Endpoint(path: "/counter/inc", method: .post, queryParameters: [:], headerParameters: [:], bodyParameters: ["id": id])
+    }
+    
+    static func decrementCounter(id: String) -> Endpoint {
+        return Endpoint(path: "/counter/dec", method: .post, queryParameters: [:], headerParameters: [:], bodyParameters: ["id": id])
+    }
+    
+    static func deleteCounter(id: String) -> Endpoint {
+        return Endpoint(path: "/counter", method: .delete, queryParameters: [:], headerParameters: [:], bodyParameters: ["id": id])
     }
 }

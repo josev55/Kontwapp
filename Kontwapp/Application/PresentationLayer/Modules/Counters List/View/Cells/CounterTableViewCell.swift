@@ -9,13 +9,22 @@
 import UIKit
 
 class CounterTableViewCell: UITableViewCell {
-
+    typealias CounterValueUpdated = (_ didIncrement: Bool) -> Void
     @IBOutlet weak var counterTitle: UILabel!
     @IBOutlet weak var counterValueLabel: UILabel!
+    @IBOutlet weak var counterStepper: UIStepper!
+    var previousValue: Int = 0
+    var valueUpdated: CounterValueUpdated?
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+    }
+    
+    func fillCell(counter: CounterViewModel) {
+        counterTitle.text = counter.title
+        counterValueLabel.text = counter.currentValue.description
+        counterStepper.value = Double(counter.currentValue)
+        previousValue = counter.currentValue
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -23,6 +32,9 @@ class CounterTableViewCell: UITableViewCell {
     }
     
     @IBAction func counterValueChanged(_ sender: UIStepper) {
-        counterValueLabel.text = Int(sender.value).description
+        let newValue = Int(sender.value)
+        counterValueLabel.text = newValue.description
+        valueUpdated?(newValue > previousValue)
+        previousValue = newValue
     }
 }
